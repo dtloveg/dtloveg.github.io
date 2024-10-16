@@ -79,23 +79,23 @@ body {
 }
 
 .header__burger {   
-    background-image: url("img/burger.svg");
+    background-image: url("assets/img/burger.svg");
     background-position: center center;
 }
 
 .header__repair {
-    background-image: url("img/repair.svg");
+    background-image: url("assets/img/repair.svg");
     background-position: center center;
 }
 
 .header__divider {
-    background-image: url("img/divider.svg"); 
+    background-image: url("assets/img/divider.svg"); 
     width: 2px;
     height: 32px;
 }
 
 .header__checkstatus {
-    background-image: url("img/checkstatus.svg");
+    background-image: url("assets/img/checkstatus.svg");
     background-position: center center;
 }
 
@@ -157,14 +157,14 @@ h1::before {
     width: 4px;
     height: 40px;
     display: flex;
-    background-image: url("img/highlight.svg");
+    background-image: url("assets/img/highlight.svg");
     background-repeat: no-repeat;
     background-position: center;
     margin-left: -16px;
   }
 
   .about-company__company-signboard {    
-    background-image: url("img/_MG_3223.svg") ;
+    background-image: url("assets/img/MG_3223.svg");
     background-repeat: no-repeat;
     margin-left: -16px;
     margin-right: -16px;
@@ -198,7 +198,7 @@ h1::before {
     width: 24px;
     height: 24px;
     display: flex;
-    background-image: url("img/expand.svg");
+    background-image: url("assets/img/expand.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -237,7 +237,7 @@ h1::before {
         display: none;
     }
     .header__divider_hidden {
-        background-image: url("img/divider.svg"); 
+        background-image: url("assets/img/divider.svg"); 
         width: 2px;
         height: 32px;
     }
@@ -247,13 +247,13 @@ h1::before {
         margin: 0 auto;
     }
     .header__call {
-        background-image: url("img/call.svg");
+        background-image: url("assets/img/call.svg");
     }
     .header__message {
-        background-image: url("img/chat.svg");
+        background-image: url("assets/img/chat.svg");
     }
     .header__contacts {
-        background-image: url("img/profile.svg");
+        background-image: url("assets/img/profile.svg");
     }    
     .header__left-container {
         display: flex;
@@ -379,9 +379,7 @@ h1::before {
     margin: 0;
     flex-basis: 50%;
    }
-   .about-company__read-more {
-    padding: 16px 0;
- }
+
 
  h1 {
     padding-left: 16    px;

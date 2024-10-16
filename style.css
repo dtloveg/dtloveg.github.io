@@ -74,8 +74,7 @@ body {
 
 .action-button {
     width: 40px;
-    height: 40px;
-    
+    height: 40px;    
 }
 
 .header__burger {   
@@ -132,14 +131,12 @@ main {
     color: #7E7E82;
     text-decoration: none;
     border-radius: 6px;
-    align-items: center;
-    
+    align-items: center;    
     background: none;
     height: 40px;
     white-space: nowrap; 
     border: 1px solid transparent;      
 }
-
 
 .link:hover  {
     text-decoration: none;
@@ -164,17 +161,14 @@ h1::before {
   }
 
   .about-company__company-signboard {    
-    background-image: url("img/_MG_3223.svg") ;
+    background-image: url("img/_MG_3223.svg");
     background-repeat: no-repeat;
     margin-left: -16px;
     margin-right: -16px;
     background-size: cover;
     width: 100%;
-    aspect-ratio: 16/9;
-        
+    aspect-ratio: 16/9;        
 }
-
-
 
 .about-company__text {
     display: flex;
@@ -203,8 +197,6 @@ h1::before {
     background-position: center;
 }
 
-
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .header__divider_hidden, .header__call, .header__message, .header__contacts, .desktope-header__links {
         display: none;
@@ -221,7 +213,6 @@ h1::before {
     .about-company__read-more {
        padding: 16px 0;
     }
-    
     ul {
         margin-top: 24px;
     }
@@ -269,30 +260,24 @@ h1::before {
         padding: 0 24px;
         margin: 24px 0;
     }
-   
     h1::before {
         margin-left: -24px;
     }
     ul {
-        margin-top: 32px;
-  
-    }
-    
-
+        margin-top: 32px;  
+    } 
     .about-company { 
         display: flex;
         flex-direction: row;
         margin-top: 32px;
         margin-bottom: 32px;
-        gap: 48px;
-        
+        gap: 48px;        
         }
     .about-company__description {
         height: 160px;
         overflow: hidden;
         }
-    .about-company__text {
-        
+    .about-company__text {        
         flex-basis: 46%;
     }
    .about-company__company-signboard {
@@ -325,10 +310,8 @@ h1::before {
         list-style-type: none;
         text-decoration: none;
         text-align: center;
-        vertical-align: middle;
-             
+        vertical-align: middle;             
     }
-
     .desktope-header__repair, .desktope-header__checkstatus {
         width: 40px;
         height: 40px;
@@ -342,37 +325,31 @@ h1::before {
         align-items: center;
         justify-content:space-between;
     }
-
     .main__container {
         padding: 0 32px;
         margin: 32px 0;
     }
-   
     h1::before {
         margin-left: -16px;
     }
-    ul {
-        
+    ul {        
         margin-top: 8px;
     }
     .main__links {
         flex-wrap: wrap;
     }
-
     .about-company { 
         display: flex;
         flex-direction: row;
         margin-top: 32px;
         margin-bottom: 32px;
-        gap: 48px;
-        
+        gap: 48px;        
         }
     .about-company__description {
         height: 160px;
         overflow: hidden;
         }
-    .about-company__text {
-        
+    .about-company__text {        
         flex-basis: 50%;
     }
    .about-company__company-signboard {
@@ -382,9 +359,8 @@ h1::before {
    .about-company__read-more {
     padding: 16px 0;
  }
-
  h1 {
-    padding-left: 16    px;
+    padding-left: 16px;
  }
 
 }

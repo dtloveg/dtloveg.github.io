@@ -172,7 +172,8 @@ h1::before {
 
 .about-company__text {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;     
+    gap: 16px;
 }
 
 .about-company__read-more {
@@ -180,8 +181,6 @@ h1::before {
     border: none;
     background: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-family: "TTLakes";
     font-weight: 500;
     font-size: 16px;
@@ -211,7 +210,7 @@ h1::before {
         margin-top: 24px;
         }
     .about-company__read-more {
-       padding: 16px 0;
+       margin-bottom: 16px;
     }
     ul {
         margin-top: 24px;
@@ -269,9 +268,7 @@ h1::before {
     .about-company { 
         display: flex;
         flex-direction: row;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        gap: 48px;        
+        column-gap: 48px;           
         }
     .about-company__description {
         height: 160px;
@@ -285,7 +282,9 @@ h1::before {
     flex-basis: 54%;
    }
    .about-company__read-more {
-    padding: 16px 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: auto;
  }
    
 }
@@ -295,9 +294,7 @@ h1::before {
         display: none;
     }
     .desktope-header {
-        display: flex;
-        margin-left: 32px;
-        margin-right: 32px;
+        display: flex;        
         align-items: center;
         justify-content:space-between;
     }
@@ -330,7 +327,8 @@ h1::before {
         margin: 32px 0;
     }
     h1::before {
-        margin-left: -16px;
+        margin-left: -38px;
+        padding-right: 18px;
     }
     ul {        
         margin-top: 8px;
@@ -341,9 +339,9 @@ h1::before {
     .about-company { 
         display: flex;
         flex-direction: row;
+        column-gap: 36px;
         margin-top: 32px;
-        margin-bottom: 32px;
-        gap: 48px;        
+        margin-bottom: 32px;       
         }
     .about-company__description {
         height: 160px;
@@ -356,11 +354,6 @@ h1::before {
     margin: 0;
     flex-basis: 50%;
    }
-
-
- h1 {
-    padding-left: 16px;
- }
 
 }
 

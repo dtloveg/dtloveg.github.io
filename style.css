@@ -275,7 +275,7 @@ body {
     }
     
     .slider-nav__links {
-        margin-top: 32px;  
+        margin-top: 24px;  
     } 
     .about-company { 
         display: flex;
@@ -356,7 +356,6 @@ body {
         display: flex;
         flex-direction: row;
         column-gap: 36px;
-        margin-top: 32px;
         margin-bottom: 32px;       
         }
     .about-company__description {

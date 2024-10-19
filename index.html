@@ -7,53 +7,57 @@
     <title>CPS</title>
 </head>
 <body>
-        <header class="header">
+        <header>
             <div class="header-container">
             <nav class="header__menu">
                 <div class="header__left-container">
-                <button class="action-button header__burger"></button>
-                <div class="header__divider_hidden"></div>
+                <button class="action-button action-button--burger"></button>
+                <div class="header__divider--mobile-hidden"></div>
                 <a>
                 <img class="header__logo" src="assets/img/group.svg" alt="Логотип компании CPS" width="97" height = "51">
                 </a> 
                 </div>
                 <div class="header__right-container">
-                <button class="action-button header__call"></button>
-                <button class="action-button header__message"></button>
-                <button class="action-button header__contacts"></button>
+                <div class="header__extra-actions header__extra-actions--mobile-hidden">
+                <button class="action-button action-button--call"></button>
+                <button class="action-button action-button--message"></button>
+                <button class="action-button action-button--contacts"></button>
+                </div>
                 <div class="header__divider"></div>
-                <button class="action-button header__repair"></button>
-                <button class="action-button header__checkstatus"></button>
+                <button class="action-button action-button--repair"></button>
+                <button class="action-button action-button--checkstatus"></button>
                 </div>
             </nav>
             </div>
         </header>
         
 
-        <main class="main">
+        <main class="main-information">
             <div class="main__container">
                 <div class="main__services">
                     <div class="desktope-header">
-                    <h1>Услуги и сервисы</h1>
+                    <h1 class="page-title">Услуги и сервисы</h1>
                     <div class="desktope-header__icons">
                     <a class="desktope-header__links" href="#">Оставить заявку 
-                        <img class="desktope-header__repair" alt="Оставить заявку" src="assets/img/repair.svg">
+                        <div class="desktope-header__repair"></div>
                     </a>
                     <a class="desktope-header__links" href="#">Статус ремонта 
-                        <img class="desktope-header__checkstatus" alt="Статус ремонта" src="assets/img/checkstatus.svg">
+                        <div class="desktope-header__checkstatus"></div>
                     </a>
                 </div>
-                    </div>   
-                    <ul class="main__links">
-                        <li><a class="link tools" href="#">Ремонтируемые устройства</a></li>
-                        <li><a class="link services" href="#">Дополнительные услуги</a></li>
-                        <li><a class="link price" href="#">Цены на услуги</a></li>
-                        <li><a class="link special" href="#">Специальные цены</a></li>
-                        <li><a class="link adress" href="#">Адреса сервисных центров</a></li>
-                        <li><a class="link feedback" href="#">Отзывы</a></li>
+                    </div>  
+                    <nav class="slider-nav"> 
+                    <ul class="slider-nav__links">
+                        <li><a class="slider-nav__link" href="#">Ремонтируемые устройства</a></li>
+                        <li><a class="slider-nav__link" href="#">Дополнительные услуги</a></li>
+                        <li><a class="slider-nav__link" href="#">Цены на услуги</a></li>
+                        <li><a class="slider-nav__link" href="#">Специальные цены</a></li>
+                        <li><a class="slider-nav__link" href="#">Адреса сервисных центров</a></li>
+                        <li><a class="slider-nav__link" href="#">Отзывы</a></li>
                      </ul>
+                    </nav> 
                  </div>
-            <article class="main about-company">
+            <article class="about-company">
             <section class="about-company__text">
             <p class ="about-company__description">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -64,8 +68,9 @@
               
             <button class="about-company__read-more">Читать далее</button>
             </section>
-            
-            <div class="about-company__company-signboard"></div>
+            <div class="about-company__img">
+            <img class="about-company__company-signboard" src="./assets/img/MG_3223.jpg" alt="Логотип компании и часы работы(не особо видно)">
+            </div>
         </article>
         </div>  
         </main>

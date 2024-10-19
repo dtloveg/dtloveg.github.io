@@ -46,6 +46,7 @@ body {
 
 .header-container {
     padding: 0 16px;
+    margin-right: 16px;
 }
 
 .header__menu {
@@ -77,12 +78,12 @@ body {
     height: 40px;    
 }
 
-.header__burger {   
+.action-button--burger {   
     background-image: url("assets/img/burger.svg");
     background-position: center center;
 }
 
-.header__repair {
+.action-button--repair {
     background-image: url("assets/img/repair.svg");
     background-position: center center;
 }
@@ -93,7 +94,7 @@ body {
     height: 32px;
 }
 
-.header__checkstatus {
+.action-button--checkstatus {
     background-image: url("assets/img/checkstatus.svg");
     background-position: center center;
 }
@@ -101,13 +102,14 @@ body {
 .main__container {
     padding: 0 16px;
     margin-top: 24px;
+    position: relative;
 }
 
 .main__services {
     margin-bottom: 16px;
 }
 
-main {
+.main-information {
     border: 1px solid #B8FFEC;
     border-bottom: none;
     border-left: none;
@@ -115,16 +117,21 @@ main {
     background-color: #F8F8F8;
     font-weight: 400px;
 }
-
-.main__links {
+.slider-nav {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.slider-nav__links {
     display: flex;
+    padding: 8px 0;
+    padding-left: 16px;
     list-style-type: none;
     flex-flow: row nowrap;
     flex-wrap: nowrap;
     overflow-x: auto;   
 }
 
-.link {
+.slider-nav__link {
     display: flex;
     padding: 0px 15px;
     font-size: 16px;
@@ -135,34 +142,36 @@ main {
     background: none;
     height: 40px;
     white-space: nowrap; 
-    border: 1px solid transparent;      
+    border: 2px solid transparent;      
 }
 
-.link:hover  {
+.slider-nav__link:hover  {
     text-decoration: none;
     border: 2px solid #B8FFEC;
     background-color: #ffffff;
 }
 
-h1 {
+.page-title {
     display: flex;
-    gap: 16px;      
+    gap: 16px; 
+    
+    
 }
 
-h1::before {
+.page-title::before {
     content: "";
     width: 4px;
     height: 40px;
-    display: flex;
+    position: absolute;
+    left: 0px;
     background-image: url("assets/img/highlight.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: -16px;
+    
   }
 
   .about-company__company-signboard {    
-    background-image: url("assets/img/MG_3223.svg");
-    background-repeat: no-repeat;
+    
     margin-left: -16px;
     margin-right: -16px;
     background-size: cover;
@@ -197,7 +206,7 @@ h1::before {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .header__divider_hidden, .header__call, .header__message, .header__contacts, .desktope-header__links {
+    .header__divider--mobile-hidden, .header__extra-actions--mobile-hidden, .desktope-header__links {
         display: none;
         }
     .header__left-container {
@@ -206,13 +215,14 @@ h1::before {
     .header__right-container {
         gap: 16px;                  
         }
+    
     .about-company {
         margin-top: 24px;
         }
     .about-company__read-more {
        margin-bottom: 16px;
     }
-    ul {
+    .slider-nav__links {
         margin-top: 24px;
     }
     .about-company__description {
@@ -226,23 +236,27 @@ h1::before {
     .desktope-header__links {
         display: none;
     }
-    .header__divider_hidden {
+    .header__divider--mobile-hidden {
         background-image: url("assets/img/divider.svg"); 
         width: 2px;
         height: 32px;
     }
-    .header__call, .header__message, .header__contacts {
+    .header__extra-actions--mobile-hidden {
+        display: flex;
+        gap: 16px;
+    }
+    .action-button--call, .action-button--message, .action-button--contacts {
         width: 40px;
         height: 40px;
         margin: 0 auto;
     }
-    .header__call {
+    .action-button--call {
         background-image: url("assets/img/call.svg");
     }
-    .header__message {
+    .action-button--message {
         background-image: url("assets/img/chat.svg");
     }
-    .header__contacts {
+    .action-button--contacts {
         background-image: url("assets/img/profile.svg");
     }    
     .header__left-container {
@@ -259,16 +273,15 @@ h1::before {
         padding: 0 24px;
         margin: 24px 0;
     }
-    h1::before {
-        margin-left: -24px;
-    }
-    ul {
+    
+    .slider-nav__links {
         margin-top: 32px;  
     } 
     .about-company { 
         display: flex;
         flex-direction: row;
-        column-gap: 48px;           
+        column-gap: 48px; 
+        margin-right: 25px;          
         }
     .about-company__description {
         height: 160px;
@@ -290,6 +303,7 @@ h1::before {
 }
 
 @media screen and (min-width: 1120px)  {
+
     .header__menu {
         display: none;
     }
@@ -315,6 +329,12 @@ h1::before {
         margin-left: 8px;        
     }
     .desktope-header__repair {
+        background-image: url("./assets/img/repair.svg");
+        margin-right: 32px;
+    }
+
+    .desktope-header__checkstatus {
+        background-image: url("./assets/img/checkstatus.svg");
         margin-right: 32px;
     }
     .desktope-header__icons {
@@ -326,15 +346,11 @@ h1::before {
         padding: 0 32px;
         margin: 32px 0;
     }
-    h1::before {
-        margin-left: -38px;
-        padding-right: 18px;
-    }
-    ul {        
-        margin-top: 8px;
-    }
-    .main__links {
+   
+    
+    .slider-nav__links {
         flex-wrap: wrap;
+        margin-top: 8px;
     }
     .about-company { 
         display: flex;
@@ -353,6 +369,11 @@ h1::before {
    .about-company__company-signboard {
     margin: 0;
     flex-basis: 50%;
+   }
+
+   .main-information {
+    border: none;
+    padding-top: 10px;
    }
 
 }
